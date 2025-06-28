@@ -52,9 +52,15 @@ if city.strip() != "":
     except:
         st.error("❌ Could not fetch weather. Check the city name.")
 
+
+
+
+
+
+
 st.markdown("---")
 st.markdown(
-    "🔧 *Built with ❤️ by [Your Name](https://www.linkedin.com/in/your-linkedin/) • "
+    "🔧 *Built by [Ameya Kulkarni](https://www.linkedin.com/in/your-linkedin/) • "
     "[GitHub](https://github.com/your-github/)*"
 )
 
