@@ -57,14 +57,20 @@ if city.strip() != "":
 
 
 
-
 st.markdown("---")
-st.markdown(
-    "🔧 *Built by [Ameya Kulkarni](https://www.linkedin.com/in/ameya-kulkarni-a31b74246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) • "
-    "[GitHub](https://github.com/Ameya79)*"
-)
+st.markdown("""
+<b>Built by Ameya Kulkarni</b><br>
 
+<a href="https://www.linkedin.com/in/ameya-kulkarni-a31b74246" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30"/>
+</a>
 
+&nbsp;
+
+<a href="https://github.com/Ameya79" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30"/>
+</a>
+""", unsafe_allow_html=True)
 
 
 
