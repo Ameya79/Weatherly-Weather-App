@@ -60,8 +60,8 @@ if city.strip() != "":
 
 st.markdown("---")
 st.markdown(
-    "🔧 *Built by [Ameya Kulkarni](https://www.linkedin.com/in/your-linkedin/) • "
-    "[GitHub](https://github.com/your-github/)*"
+    "🔧 *Built by [Ameya Kulkarni](https://www.linkedin.com/in/ameya-kulkarni-a31b74246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) • "
+    "[GitHub](https://github.com/Ameya79)*"
 )
 
 
