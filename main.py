@@ -107,7 +107,7 @@ if city.strip() != "":
                 st.markdown(f"**📅 {date}**")
                 st.image(icon, width=50)
                 st.markdown(f"🌡️ {temp} °C - {condition}")
-                st.markdown("---")
+                
     except:
         st.error("❌ Could not fetch weather. Check the city name.")
 
