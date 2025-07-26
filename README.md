@@ -1,90 +1,120 @@
-# 🌦️ Weatherly
+# Weatherly 🌤️
 
-**Weatherly** is a sleek, lightweight, and beginner-friendly weather web app built with [Streamlit](https://streamlit.io/) and powered by the [WeatherAPI](https://www.weatherapi.com/). It provides real-time weather data for any city in the world—temperature, humidity, wind, condition icons, and much more—wrapped in a clean and interactive UI.
+**Weatherly** is a sleek and fast Streamlit-based weather dashboard that shows current weather, air quality, and a 3-day forecast for any city, powered by the [WeatherAPI.com](https://www.weatherapi.com/) service.
 
----
-
-## 🔍 Features
-
-- 🌍 Search weather for **any city**
-- 🌡️ Real-time temperature, humidity, and pressure
-- 💨 Wind speed and direction
-- 🌤️ Beautiful condition icons (sunny, cloudy, rain, etc.)
-- 🕒 Local time of the city
-- 🔄 Fast and live updates using Streamlit
-- 🍋 Super simple, minimalistic UI for distraction-free use
+> 🔐 API Key is securely stored using `secrets.toml`.
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Features
 
-**Run it locally** or host using platforms like **Streamlit Community Cloud**, **Render**, or **Hugging Face Spaces**.
-
-> ⚠️ *Note: WeatherAPI requires a free API key for usage. Instructions below.*
+- 🌍 Real-time weather updates for any city
+- 📊 Temperature, humidity, UV index, cloud cover, wind details
+- 🫁 PM2.5-based air quality score with intuitive emoji scale
+- 📅 3-day forecast with weather condition icons
+- 🔄 Live local time and last updated info
+- 🎨 Dynamic weather icons based on condition (e.g. sunny, storm, fog)
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Tool         | Purpose                              |
-|--------------|--------------------------------------|
-| Python       | Programming language                 |
-| Streamlit    | Web framework for UI and interaction |
-| WeatherAPI   | Source of real-time weather data     |
-| Requests     | Handling HTTP API calls              |
+- **Python**
+- **Streamlit**
+- **WeatherAPI** (REST API)
+- **Secrets.toml** for secure key management
 
 ---
 
+## 🔐 Setup: `secrets.toml`
 
-## 🔒 Security Features
+1. Go to [https://www.weatherapi.com/](https://www.weatherapi.com/) and create a free account.
+2. Copy your API key.
+3. In your Streamlit app folder, create a `.streamlit/secrets.toml` file:
 
-* API key is loaded via `.env` (never hardcoded).
-* 🍋 Squeeze-secure! Weather data is fetched live and nothing is stored on the server.
-* All requests are stateless and safe. No cookies, no tracking.
+```toml
+[api]
+key = "your_weather_api_key_here"
+````
 
----
-
-## 🧠 How It Works
-
-1. User inputs city name in the Streamlit UI.
-2. `requests` module sends a GET request to the WeatherAPI endpoint.
-3. Data is fetched and parsed (temperature, humidity, etc.).
-4. UI dynamically updates with clean visual output.
+✅ **Never expose your API key in the main script.**
 
 ---
 
-## 📝 Code Structure
+## ▶️ Run Locally
 
-```
-weatherly/
-├── app.py               # Main Streamlit app
-├── requirements.txt     # Python dependencies
-├── .env                 # Environment file for API key
-└── README.md            # This file!
+```bash
+git clone https://github.com/yourusername/weatherly.git
+cd weatherly
+pip install -r requirements.txt
+streamlit run app.py
 ```
 
----
+Make sure to:
 
-## 💡 Future Improvements
-
-* 📍 Location-based search using IP or geolocation
-* ⏳ 3-day forecast and hourly breakdowns
-* 🌗 Day/Night mode
-* 🧠 AI-based weather insights or clothing suggestions
+* Place your `secrets.toml` inside a `.streamlit/` directory.
+* Rename your main script if not named `app.py`.
 
 ---
 
-## 🤝 Contributing
+## ☁️ Deployment (Streamlit Cloud)
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+1. Push your code to GitHub.
+2. Go to [https://share.streamlit.io](https://share.streamlit.io) and connect your repo.
+3. In the app settings, add your API key to **Secrets**:
+
+```toml
+[api]
+key = "your_api_key"
+```
+
+4. Hit Deploy — you're live!
 
 ---
 
-## 📄 OPEN SOURCE  
+## 📌 Example API Used
 
-## 🙋‍♂️ Author
+```url
+https://api.weatherapi.com/v1/forecast.json?key=YOUR_KEY&q=London&days=3&aqi=yes
+```
 
-Made with ❤️ by [Ameya](https://github.com/Ameya79)
+Returns:
+
+* Current weather
+* Air quality (PM2.5)
+* 3-day forecast
+
+---
+
+## 👤 Author
+
+**Ameya Kulkarni**
+[🔗 LinkedIn](https://www.linkedin.com/in/ameya-kulkarni-a31b74246) | [💻 GitHub](https://github.com/Ameya79)
+
+---
+
+## 📃 License
+
+This project is open-source and free to use.
+
+---
+
+##  Notes
+
+* Works best for cities with valid API coverage.
+* The PM2.5 air quality score is color-coded:
+
+  * 🟢 Excellent
+  * 🟡 Moderate
+  * 🟠 Poor
+  * 🔴 Hazardous
+* All images used are hosted from [Google Weather Icons](https://maps.gstatic.com/weather/).
+
+---
 
 ```
 
+DROP A STAR IF YOU FOUND THIS USEFUL :)
+
+
+```
