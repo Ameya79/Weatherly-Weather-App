@@ -89,7 +89,9 @@ Returns:
 ## 👤 Author
 
 **Ameya Kulkarni**
-[🔗 LinkedIn](https://www.linkedin.com/in/ameya-kulkarni-a31b74246) | [💻 GitHub](https://github.com/Ameya79)
+💻[ GitHub](https://github.com/Ameya79)
+📫 [Connect with me on LinkedIn](https://www.linkedin.com/in/ameya-kulkarni-a31b74246)
+🎯 [View my Codolio](https://codolio.com/profile/Ameya%20Kulkarni)
 
 ---
 
