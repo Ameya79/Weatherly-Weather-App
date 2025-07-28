@@ -23,7 +23,7 @@
 - **Streamlit**
 - **WeatherAPI** (REST API)
 - **Secrets.toml** for secure key management
-
+- Streamlit Cloud 🌨️ 
 ---
 
 ## 🔐 Setup: `secrets.toml`
