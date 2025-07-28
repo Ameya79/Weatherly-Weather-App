@@ -116,7 +116,7 @@ This project is open-source and free to use.
 
 ```
 
-DROP A STAR IF YOU FOUND THIS USEFUL :)
+DROP A ⭐ IF YOU FOUND THIS USEFUL :)
 
 
 ```
