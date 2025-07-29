@@ -1,5 +1,5 @@
 # Weatherly 🌤️
-## 🍀Live Project -https://weatherly-smzufohbhuex5grhcavnd4.streamlit.app/
+## 🍀Live Project --https://weatherly-smzufohbhuex5grhcavnd4.streamlit.app/
 ---
 **Weatherly** is a sleek and fast Streamlit-based weather dashboard that shows current weather, air quality, and a 3-day forecast for any city, powered by the [WeatherAPI.com](https://www.weatherapi.com/) service.
 
