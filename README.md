@@ -1,91 +1,91 @@
-# Weatherly 🌤️
+# 🌤️ Weatherly - Real-Time Weather Dashboard
 
-## 🍀 Live Project - https://weatherly-smzufohbhuex5grhcavnd4.streamlit.app/
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)]()
+[![Streamlit](https://img.shields.io/badge/streamlit-1.x-red)]()
+[![WeatherAPI](https://img.shields.io/badge/weatherapi-REST%20API-lightgrey)]()
+[![License](https://img.shields.io/badge/license-MIT-orange)]()
 
----
+**Weatherly** is a sleek, fast, and responsive weather dashboard built with **Streamlit**, fetching real-time weather, air quality, and a 3-day forecast for any city — powered by [WeatherAPI.com](https://www.weatherapi.com/).
 
-**Weatherly** is a sleek and fast Streamlit-based weather dashboard that shows current weather, air quality, and a 3-day forecast for any city, powered by the [WeatherAPI.com](https://www.weatherapi.com/) service.
+🌐 **Live Project:** [weatherly-smzufohbhuex5grhcavnd4.streamlit.app](https://weatherly-smzufohbhuex5grhcavnd4.streamlit.app)
 
-> 🔐 API Key is securely stored using `secrets.toml`.
+> 🔐 API keys are securely stored using `secrets.toml` — no hardcoding.
 
 ---
 
 ## 🚀 Features
-
-- 🌍 Real-time weather updates for any city
-- 📊 Temperature, humidity, UV index, cloud cover, wind details
-- 🫁 PM2.5-based air quality score with intuitive emoji scale
-- 📅 3-day forecast with weather condition icons
-- 🔄 Live local time and last updated info
-- 🎨 Dynamic weather icons based on condition (e.g., sunny, storm, fog)
-
----
-
-## 🛠️ Tech Stack
-
-- **Python**
-- **Streamlit**
-- **WeatherAPI** (REST API)
-- **Secrets.toml** for secure key management
-- **Streamlit Cloud** (Deployment) 🌨️
+- 🌍 **Real-time weather** for any city worldwide
+- 📊 **Details**: Temperature, humidity, UV index, cloud cover, wind speed/direction
+- 🫁 **Air quality** score (PM2.5-based) with emoji scale
+- 📅 **3-day forecast** with dynamic weather icons
+- ⏱ **Live local time** + last updated timestamp
+- 🎨 Auto-switching weather icons (sunny, storm, fog, etc.)
 
 ---
 
-## 🔐 Setup: `secrets.toml`
+## 🛠 Tech Stack
+| Component     | Technology         |
+|---------------|--------------------|
+| Backend       | Python             |
+| Frontend/UI   | Streamlit          |
+| API           | WeatherAPI (REST)  |
+| Secrets Mgmt  | `secrets.toml`     |
+| Deployment    | Streamlit Cloud 🌨️ |
 
-1. Go to [https://www.weatherapi.com/](https://www.weatherapi.com/) and create a free account.
-2. Copy your API key.
-3. In your Streamlit app folder, create a `.streamlit/secrets.toml` file:
+---
 
-
+## 🔐 API Key Setup (`secrets.toml`)
+1. Sign up at [WeatherAPI.com](https://www.weatherapi.com/) and get your free API key.
+2. In your Streamlit app folder, create a `.streamlit/secrets.toml` file:
+```toml
 [api]
 key = "your_weather_api_key_here"
 
-✅ Never expose your API key in the main script.
+✅ Never commit your API key to GitHub — keep it in secrets.toml.
 
 
 ---
 
 ▶️ Run Locally
 
-git clone https://github.com/yourusername/weatherly.git
-cd weatherly
-pip install -r requirements.txt
-streamlit run app.py
+$ git clone https://github.com/yourusername/weatherly.git
+$ cd weatherly
+$ pip install -r requirements.txt
+$ streamlit run app.py
 
-Make sure to:
+Make sure:
 
-Place your secrets.toml inside a .streamlit/ directory.
+Your secrets.toml is inside .streamlit/ folder
 
-Rename your main script if not named app.py.
+Your main file is named app.py (or update the run command)
 
 
 
 ---
 
-☁️ Deployment (Streamlit Cloud)
+☁️ Deploy on Streamlit Cloud
 
-1. Push your code to GitHub.
-
-
-2. Go to https://share.streamlit.io and connect your repo.
+1. Push your code to GitHub
 
 
-3. In the app settings, add your API key to Secrets:
+2. Go to share.streamlit.io and connect your repo
+
+
+3. Add your API key in App Settings → Secrets:
 
 
 
 [api]
 key = "your_api_key"
 
-4. Hit Deploy — you're live!
+4. Deploy — you’re live!
 
 
 
 
 ---
 
-📌 Example API Used
+📌 Example API Call
 
 https://api.weatherapi.com/v1/forecast.json?key=YOUR_KEY&q=London&days=3&aqi=yes
 
@@ -93,7 +93,7 @@ Returns:
 
 Current weather
 
-Air quality (PM2.5)
+PM2.5 air quality
 
 3-day forecast
 
@@ -103,9 +103,9 @@ Air quality (PM2.5)
 
 📝 Notes
 
-Works best for cities with valid API coverage.
+Works best for cities with API coverage
 
-The PM2.5-based air quality scale is color-coded:
+PM2.5 Air Quality Scale:
 
 🟢 Excellent
 
@@ -116,7 +116,7 @@ The PM2.5-based air quality scale is color-coded:
 🔴 Hazardous
 
 
-All images used are hosted from Google Weather Icons.
+Icons sourced from Google Weather Icons
 
 
 
@@ -125,20 +125,15 @@ All images used are hosted from Google Weather Icons.
 👤 Author
 
 Ameya Kulkarni
-💻 GitHub
-📫 LinkedIn
-🎯 Codolio Profile
+💻 GitHub | 📫 LinkedIn | 🎯 Codolio
 
 
 ---
 
-📃 License
+📜 License: MIT — free to use, modify, and share.
 
-This project is open-source and free to use.
-
+⭐ If Weatherly helped you, drop a star!
 
 ---
-
-⭐ Drop a star if you found this useful! ⭐
 
 
