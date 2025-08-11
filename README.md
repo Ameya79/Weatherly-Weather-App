@@ -1,6 +1,9 @@
 # Weatherly 🌤️
-## 🍀Live Project -https://weatherly-smzufohbhuex5grhcavnd4.streamlit.app/
+
+## 🍀 Live Project - https://weatherly-smzufohbhuex5grhcavnd4.streamlit.app/
+
 ---
+
 **Weatherly** is a sleek and fast Streamlit-based weather dashboard that shows current weather, air quality, and a 3-day forecast for any city, powered by the [WeatherAPI.com](https://www.weatherapi.com/) service.
 
 > 🔐 API Key is securely stored using `secrets.toml`.
@@ -14,7 +17,7 @@
 - 🫁 PM2.5-based air quality score with intuitive emoji scale
 - 📅 3-day forecast with weather condition icons
 - 🔄 Live local time and last updated info
-- 🎨 Dynamic weather icons based on condition (e.g. sunny, storm, fog)
+- 🎨 Dynamic weather icons based on condition (e.g., sunny, storm, fog)
 
 ---
 
@@ -24,7 +27,8 @@
 - **Streamlit**
 - **WeatherAPI** (REST API)
 - **Secrets.toml** for secure key management
-- Streamlit Cloud 🌨️ 
+- **Streamlit Cloud** (Deployment) 🌨️
+
 ---
 
 ## 🔐 Setup: `secrets.toml`
@@ -36,88 +40,105 @@
 ```toml
 [api]
 key = "your_weather_api_key_here"
-````
 
-✅ **Never expose your API key in the main script.**
+✅ Never expose your API key in the main script.
+
 
 ---
 
-## ▶️ Run Locally
+▶️ Run Locally
 
-```bash
 git clone https://github.com/yourusername/weatherly.git
 cd weatherly
 pip install -r requirements.txt
 streamlit run app.py
-```
 
 Make sure to:
 
-* Place your `secrets.toml` inside a `.streamlit/` directory.
-* Rename your main script if not named `app.py`.
+Place your secrets.toml inside a .streamlit/ directory.
+
+Rename your main script if not named app.py.
+
+
 
 ---
 
-## ☁️ Deployment (Streamlit Cloud)
+☁️ Deployment (Streamlit Cloud)
 
 1. Push your code to GitHub.
-2. Go to [https://share.streamlit.io](https://share.streamlit.io) and connect your repo.
-3. In the app settings, add your API key to **Secrets**:
 
-```toml
+
+2. Go to https://share.streamlit.io and connect your repo.
+
+
+3. In the app settings, add your API key to Secrets:
+
+
+
 [api]
 key = "your_api_key"
-```
 
 4. Hit Deploy — you're live!
 
+
+
+
 ---
 
-## 📌 Example API Used
+📌 Example API Used
 
-```url
 https://api.weatherapi.com/v1/forecast.json?key=YOUR_KEY&q=London&days=3&aqi=yes
-```
 
 Returns:
 
-* Current weather
-* Air quality (PM2.5)
-* 3-day forecast
+Current weather
+
+Air quality (PM2.5)
+
+3-day forecast
+
+
 
 ---
 
-## 👤 Author
+📝 Notes
 
-**Ameya Kulkarni**
-💻[ GitHub](https://github.com/Ameya79)
-📫 [Connect with me on LinkedIn](https://www.linkedin.com/in/ameya-kulkarni-a31b74246)
-🎯 [View my Codolio](https://codolio.com/profile/Ameya%20Kulkarni)
+Works best for cities with valid API coverage.
+
+The PM2.5-based air quality scale is color-coded:
+
+🟢 Excellent
+
+🟡 Moderate
+
+🟠 Poor
+
+🔴 Hazardous
+
+
+All images used are hosted from Google Weather Icons.
+
+
 
 ---
 
-## 📃 License
+👤 Author
+
+Ameya Kulkarni
+💻 GitHub
+📫 LinkedIn
+🎯 Codolio Profile
+
+
+---
+
+📃 License
 
 This project is open-source and free to use.
 
----
-
-##  Notes
-
-* Works best for cities with valid API coverage.
-* The PM2.5 air quality score is color-coded:
-
-  * 🟢 Excellent
-  * 🟡 Moderate
-  * 🟠 Poor
-  * 🔴 Hazardous
-* All images used are hosted from [Google Weather Icons](https://maps.gstatic.com/weather/).
 
 ---
 
-```
-
-DROP A ⭐ IF YOU FOUND THIS USEFUL :)
+⭐ Drop a star if you found this useful! ⭐
 
 
-```
