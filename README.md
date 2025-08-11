@@ -37,7 +37,7 @@
 2. Copy your API key.
 3. In your Streamlit app folder, create a `.streamlit/secrets.toml` file:
 
-```toml
+
 [api]
 key = "your_weather_api_key_here"
 
