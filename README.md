@@ -37,7 +37,7 @@
 ## 🔐 API Key Setup (`secrets.toml`)
 1. Sign up at [WeatherAPI.com](https://www.weatherapi.com/) and get your free API key.
 2. In your Streamlit app folder, create a `.streamlit/secrets.toml` file:
-```toml
+
 [api]
 key = "your_weather_api_key_here"
 
