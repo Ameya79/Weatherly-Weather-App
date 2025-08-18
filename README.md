@@ -125,7 +125,6 @@ Icons sourced from Google Weather Icons
 👤 Author
 
 Ameya Kulkarni
-💻 GitHub | 📫 LinkedIn | 🎯 Codolio
 
 
 ---
